@@ -168,13 +168,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.top {
+  border-bottom: 1px dashed grey;
+}
+.top header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-flow: row;
+  align-items: center;
+  padding: 25px 0;
+}
+.top header nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+  align-items: center;
+  width: 350px;
+}
+.top header nav a {
+  text-decoration: none;
+  font-size: 1.7em;
+  color: black;
 }
 .footer {
   width: 100%;
