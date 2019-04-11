@@ -256,3 +256,13 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding: 12px 50px;
+  font-size: 1.9em;
+  background-color: #008080;
+  color: #fff;
+  border-radius: 15px;
+}
