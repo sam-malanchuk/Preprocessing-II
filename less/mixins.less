@@ -1,1 +1,12 @@
 // Mixins in here
+.main-container() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-box(@justifyContent, @flexFlow: row) {
+    display: flex;
+    justify-content: @justifyContent;
+    flex-flow: @flexFlow;
+}
