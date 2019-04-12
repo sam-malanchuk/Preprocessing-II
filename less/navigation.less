@@ -7,9 +7,25 @@
         .flex-box(space-between);
         padding: 25px 0;
 
+        @media @mobile {
+            .flex-box(center, column);
+            padding: 15px 0;
+        }
+
+        h1 {
+            @media @mobile {
+                font-size: 3em;
+                padding-bottom: 10px;
+            }
+        }
+
         nav {
             .flex-box(space-evenly);
             width: 350px;
+
+            @media @mobile {
+                width: 100%;
+            }
 
             a {
                 text-decoration: none;

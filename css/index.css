@@ -181,12 +181,32 @@ img {
   align-items: center;
   padding: 25px 0;
 }
+@media (max-width: 500px) {
+  .top header {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 500px) {
+  .top header h1 {
+    font-size: 3em;
+    padding-bottom: 10px;
+  }
+}
 .top header nav {
   display: flex;
   justify-content: space-evenly;
   flex-flow: row;
   align-items: center;
   width: 350px;
+}
+@media (max-width: 500px) {
+  .top header nav {
+    width: 100%;
+  }
 }
 .top header nav a {
   text-decoration: none;
