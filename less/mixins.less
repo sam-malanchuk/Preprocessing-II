@@ -1,1 +1,26 @@
 // Mixins in here
+.main-container() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-box(@justifyContent, @flexFlow: row) {
+    display: flex;
+    justify-content: @justifyContent;
+    flex-flow: @flexFlow;
+    align-items: center;
+}
+
+.btn-start(@height: 43px, @width: 200px, @fontSize: 1.9em, @backgroundColor: #008080, @color: #fff, @borderRadius: 15px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: @height;
+    width: @width;
+    font-size: @fontSize;
+    background-color: @backgroundColor;
+    color: @color;
+    border-radius: @borderRadius;
+}
