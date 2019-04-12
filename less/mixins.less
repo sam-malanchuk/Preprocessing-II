@@ -12,11 +12,13 @@
     align-items: center;
 }
 
-.btn-start(@topPadding: 12px, @bottomPadding: 50px, @fontSize: 1.9em, @backgroundColor: #008080, @color: #fff, @borderRadius: 15px) {
-    display: inline-block;
+.btn-start(@height: 43px, @width: 200px, @fontSize: 1.9em, @backgroundColor: #008080, @color: #fff, @borderRadius: 15px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    text-align: center;
-    padding: @topPadding @bottomPadding; 
+    height: @height;
+    width: @width;
     font-size: @fontSize;
     background-color: @backgroundColor;
     color: @color;

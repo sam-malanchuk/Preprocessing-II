@@ -78,6 +78,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -86,15 +90,26 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    .flex-box(space-between);
+
+    @media @mobile {
+      .flex-box(space-between, column);
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 80%;
+      }
+
       .btn {
         .btn-start();
+
+        @media @mobile {
+          .btn-start(43px, 100%);
+        }
       }
     }
   }
